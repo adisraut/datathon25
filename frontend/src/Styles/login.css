@@ -1,0 +1,117 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Center: Menu + Dropdown */
+.navbar-center {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+/* Dropdown */
+.category-dropdown {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Search Button */
+.search-btn {
+    background-color: #e6b5eb;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #e6b5eb;
+}
+
+/* Right: Login Button */
+.navbar-right .login-btn {
+    background: #e6b5eb;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.navbar-right .login-btn:hover {
+    background: #e6b5eb;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
